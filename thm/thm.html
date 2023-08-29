@@ -1,2 +1,13 @@
+<script>
+  // Extract token from URL hash fragment
+  var hash = window.location.hash.substr(1);
+  var hashParams = new URLSearchParams(hash);
+  var accessToken = hashParams.get('access_token');
+  
+  // Log the token to the browser console
+  console.log('Access Token:', accessToken);
+
+</script>
+
 <a href="/thm/sweettooth.html"><p style="text-align:center">Sweettooth</p></a>
 <a href="/thm/cmspit.html"><p style="text-align:center">CMSpit</p></a>
